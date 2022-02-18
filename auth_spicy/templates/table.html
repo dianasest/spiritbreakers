@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Login to Spirit</title>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-hexashop.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl-carousel.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        *{
+            font-family: 'Poppins';
+        }
+    	.active{
+    		color: #FBAD16;
+    		font-weight: 800px;
+    	}
+        table{
+            border:1px solid black;
+        }
+        tr{
+            border:1px solid black;
+        }
+        th{
+            border:1px solid black;
+            text-align: center;
+            width:200px;
+            height: 50px;
+            font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 33px;
+
+color: #000000;
+        }
+    </style>
+<!--
+
+
+-->
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo" >
+                            <img style="height: 80px;" src="{% static 'images/logo-halyk.png' %}"><strong style="color: black;font-family: Poppins;font-weight: 800px;line-height: 30px;font-size: 20px;">SPIRIT</strong><strong style="color:rgb(231, 143, 42);font-family: Poppins;font-weight: 800px;line-height: 30px;font-size: 20px;">BREAKERS</strong>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav" style="border-bottom: 1px solid #FBAD16;">
+                            <li class="scroll-to-section"><a href="{% url 'home' %}">Home</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'map' %}" class="active">Map</a></li>
+                            <li class="scroll-to-section"><a href="#women">List</a></li>
+                            <li class="scroll-to-section"><a href="#kids">Claim</a></li>
+                           
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <table> 
+<tr>
+  <th>ID</th>
+  <th>Balance</th>
+  <th>Status</th>
+</tr>
+{% for result in atms %}
+<tr>
+  <th> {{ result.id }}</th>
+  <th> {{ result.balance }}</th>
+  <th>{% if result.filled == False %}
+    пустой
+    {% else %}
+    заполнен
+    {% endif %}
+    </th>
+</tr> 
+{% endfor %}
+</table>
+
+  </body>
+</html>
+

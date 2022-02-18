@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Login to Spirit</title>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-hexashop.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl-carousel.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        *{
+            font-family: 'Poppins';
+        }
+    	.active{
+    		color: #FBAD16;
+    		font-weight: 800px;
+    	}
+        .map{
+            width: 1100px;
+            height: 630px;
+            background: #FFFFFF;
+            border-radius: 9px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+            padding:0px;
+        }
+        .map-1{
+            height: 600px;
+            width:100%;
+            margin-bottom: 0px;
+            padding:0px;
+        }
+        .shape1{
+
+width: 236px;
+height: 151px;
+
+background: linear-gradient(90deg, rgba(65, 224, 129, 0.44) 0%, rgba(255, 255, 255, 0) 100%);
+filter: drop-shadow(5px 4px 12px rgba(0, 0, 0, 0.25));
+border-radius: 9px;
+        }
+        .shape1-div{
+            width:250px;
+            float:left;
+            padding-left: 20%;
+        }
+        .shape2-div{
+            width:250px;
+            padding-left: 45%;
+        }
+        .shape2{
+width: 236px;
+height: 151px;
+
+background: linear-gradient(90deg, rgba(247, 12, 12, 0.44) 0%, rgba(255, 255, 255, 0) 100%);
+filter: drop-shadow(5px 4px 12px rgba(0, 0, 0, 0.25));
+border-radius: 9px;
+        }
+        .container1{
+            padding-top: 200px;  
+        }
+        .shapes{
+            height: 160px;
+
+        }
+        .condition{
+            text-align: center;
+width: 100%;
+height: 29px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 21px;
+
+color: #3F3D56;
+        }
+        .condition1{
+            padding-left: 15%;
+            
+        }
+        .quantity-filled{
+width: 89px;
+height: 60px;
+padding-left:13%;
+background: #60975B;
+border-radius: 4px;
+        }
+        .quantity-empty{
+            position: absolute;
+width: 89px;
+height: 60px;
+padding-left:12%;
+background: #DC5050;
+border-radius: 4px;
+        }
+        .number{
+            
+width: 44px;
+height: 39px;
+text-align: center;
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 54px;
+
+color: #FFFFFF;
+        }
+    </style>
+<!--
+
+TemplateMo 571 Hexashop
+
+https://templatemo.com/tm-571-hexashop
+
+-->
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo" >
+                            <img style="height: 80px;" src="{% static 'images/logo-halyk.png' %}"><strong style="color: black;font-family: Poppins;font-weight: 800px;line-height: 30px;font-size: 20px;">SPIRIT</strong><strong style="color:rgb(231, 143, 42);font-family: Poppins;font-weight: 800px;line-height: 30px;font-size: 20px;">BREAKERS</strong>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav" style="border-bottom: 1px solid #FBAD16;">
+                            <li class="scroll-to-section"><a href="{% url 'home' %}" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'map' %}">Map</a></li>
+                            <li class="scroll-to-section"><a href="">List</a></li>
+                            <li class="scroll-to-section"><a href="">Claim</a></li>
+                           
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+  <div class="container1">
+      <div class="shapes">
+        <div class="shape1-div">
+        <div class="shape1">
+            <p class="condition">Filled</p>
+            <div class="condition1">
+            <div class="quantity-filled">
+                <p class="number" style="text-align:center;">12</p>
+              </div>
+          </div>
+        </div>
+        </div>
+        <div class="shape2-div">
+        <div class="shape2">
+              <p class="condition">Empty</p>
+              <div class="condition1">
+              <div class="quantity-empty">
+                <p class="number" style="text-align:center;">17</p>
+
+              </div>          
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <img style="padding-left: 15%;" src="{% static 'images/graph.png' %}">
+      </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+<!--<span><a href ="{% url 'logout' %}">Log Out</a></span> -->
+   
+    <!-- ***** Footer Start ***** -->
+    <!--<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="assets/images/white-logo.png" alt="hexashop ecommerce templatemo">
+                        </div>
+                        <ul>
+                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
+                            <li><a href="#">hexashop@company.com</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="#">Men’s Shopping</a></li>
+                        <li><a href="#">Women’s Shopping</a></li>
+                        <li><a href="#">Kid's Shopping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Tracking ID</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
+                        
+                        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
+
+                        <br>Distributed By: <a href="https://themewagon.com" target="_blank" title="free & premium responsive templates">ThemeWagon</a></p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery -->
+    <script src="{% static 'assets/js/jquery-2.1.0.min.js' %}"></script>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/js/popper.js' %}"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/accordions.js' %}"></script>
+    <script src="{% static 'assets/js/datepicker.js' %}"></script>
+    <script src="{% static 'assets/js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/imgfix.min.js' %}"></script> 
+    <script src="{% static 'assets/js/slick.js' %}"></script> 
+    <script src="{% static 'assets/js/lightbox.js' %}"></script> 
+    <script src="{% static 'assets/js/isotope.js' %}"></script> 
+    
+    <!-- Global Init -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+</html>
+

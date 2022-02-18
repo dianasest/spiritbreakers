@@ -1,0 +1,308 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Login to Spirit</title>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-hexashop.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl-carousel.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        *{
+            font-family: 'Poppins';
+        }
+    	.active{
+    		color: #FBAD16;
+    		font-weight: 800px;
+    	}
+        .map{
+            width: 1100px;
+            height: 630px;
+            background: #FFFFFF;
+            border-radius: 9px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+            padding:0px;
+        }
+        .map-1{
+            height: 600px;
+            width:100%;
+            margin-bottom: 0px;
+            padding:0px;
+        }
+		table{
+			margin-left:15%;
+			margin-top:5%;
+		}
+		table tr td{
+			border:1px solid #000000;
+			font-size:18px;
+			text-align: center;
+			font-weight: 500px;
+			color:#000000;
+			font-family: Roboto;
+		}
+		.table1{
+			width:100%;
+			height: 600px;
+			background-color: #c2f6cd;
+			
+		}
+    </style>
+<!--
+
+TemplateMo 571 Hexashop
+
+https://templatemo.com/tm-571-hexashop
+
+-->
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo" >
+                            <img style="height: 80px;" src="{% static 'images/logo-halyk.png' %}"><strong style="color: black;font-family: Poppins;font-weight: 800px;line-height: 30px;font-size: 20px;">SPIRIT</strong><strong style="color:rgb(231, 143, 42);font-family: Poppins;font-weight: 800px;line-height: 30px;font-size: 20px;">BREAKERS</strong>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav" style="border-bottom: 1px solid #FBAD16;">
+                            <li class="scroll-to-section"><a href="#top">Home</a></li>
+                            <li class="scroll-to-section"><a href="#men" class="active">Map</a></li>
+                            <li class="scroll-to-section"><a href="#women">List</a></li>
+                            <li class="scroll-to-section"><a href="#kids">Claim</a></li>
+                           
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <br>
+    <br>
+    <br>
+    <br>
+	
+ <div class="container">
+	<h2 style="width: 315px;
+	height: 44px;
+	
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;margin-top:30px;">DATE: November 21, 2021</h2>
+	<div class="table1">
+<table style="width:100%;position: absolute;
+width: 550px;
+height: 251px;
+border: 0px solid #000000;
+box-sizing: border-box;">
+	<tr style="border-top:1px solid black;border:1px solid #000000;">
+	  <td colspan="4">Адрес: г.Бишкек, ул. Шопокова, 101/1</td>
+	</tr>
+	<tr>
+	  <td style="width:100%" colspan="4">ID - 750001</td>
+	</tr>
+	<tr>
+		<td>Номинал</td>
+		<td>Валюта</td>
+		<td>Количество,шт</td>
+		<td>Сумма</td>
+	  </tr>
+	  <tr style="border:1px solid #000000;">
+		<td>1000</td>
+		<td>сом</td>
+		<td>10</td>
+		<td>10000</td>
+	  </tr>
+	  <tr>
+		<td>500</td>
+		<td>сом</td>
+		<td>50</td>
+		<td>25000</td>
+	  </tr>
+	  <tr>
+		<td>200</td>
+		<td>сом</td>
+		<td>50</td>
+		<td>10000</td>
+	  </tr>
+	  <tr>
+		<td>100</td>
+		<td>сом</td>
+		<td>100</td>
+		<td>10000</td>
+		
+	  </tr>
+	  <tr>
+		<td style="border:none;"></td>
+		<td style="border:none;"></td>
+		<td style="border:none;"></td>
+		<td>Общая сумма: 55000</td>
+		
+	  </tr>
+  </table>
+  <button style="width: 157px;
+  height: 30px;
+  
+  background: #22DF4C;
+  border-radius: 50px;float:right;margin-top:50%;">Отправить заявку</button>
+  </div>
+	 </div>
+   <!-- <br>
+<div class="dropdown">
+<select name="cities" id="cities" style="width:118px;text-align: center;border-top:none;border-left: none;border-right:none;font-weight: 600px;font-size:14px;color:#000000;outline: none;">
+    <option value="Bishkek">Bishkek</option>
+    <option value="osh">Osh</option>
+</select>
+<select name="id" id="id" style="width:118px;margin-left:40px;text-align: center;border-top:none;border-left: none;border-right:none;font-weight: 600px;font-size:14px;color:#000000;outline: none;">
+    <option value="Bishkek">ID 5718</option>
+    <option value="osh">ID 5719</option>
+</select>
+<button style="text-align: center;background-color: #FBAD16; color:white;width:93px;height: 30px;margin-left:20px;font-size: 12px;border-radius: 5px;border:none;">View</button>
+</div>
+        <div class="row mt-4 map" style="width:900px;">
+            <div style="text-align: center;margin-left:40%;margin-top:70px;"><i class="bi bi-chevron-left"><i style="margin-left: 40px;">Bishkek</i></i><i class="bi bi-chevron-right" style="margin-left: 40px;"></i></div>
+            <div class="col-md-10 offset-md-1">
+
+                <div class="map-1" style="margin-top: 0px;width:900px;margin-left: -90px;border-radius: 9px;">
+                {{map1|safe}}
+            </div>
+            </div>
+        </div>
+    </div>
+<span><a href ="{% url 'logout' %}">Logout</a></span> 
+   
+    <!-- ***** Footer Start ***** -->
+    <!--<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="assets/images/white-logo.png" alt="hexashop ecommerce templatemo">
+                        </div>
+                        <ul>
+                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
+                            <li><a href="#">hexashop@company.com</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="#">Men’s Shopping</a></li>
+                        <li><a href="#">Women’s Shopping</a></li>
+                        <li><a href="#">Kid's Shopping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Tracking ID</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
+                        
+                        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
+
+                        <br>Distributed By: <a href="https://themewagon.com" target="_blank" title="free & premium responsive templates">ThemeWagon</a></p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery -->
+    <script src="{% static 'assets/js/jquery-2.1.0.min.js' %}"></script>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/js/popper.js' %}"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/accordions.js' %}"></script>
+    <script src="{% static 'assets/js/datepicker.js' %}"></script>
+    <script src="{% static 'assets/js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/imgfix.min.js' %}"></script> 
+    <script src="{% static 'assets/js/slick.js' %}"></script> 
+    <script src="{% static 'assets/js/lightbox.js' %}"></script> 
+    <script src="{% static 'assets/js/isotope.js' %}"></script> 
+    
+    <!-- Global Init -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+</html>
+
